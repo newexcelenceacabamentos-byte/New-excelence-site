@@ -427,3 +427,74 @@ font-size:30px;
 }
 
 }
+/*====================================
+        GOOGLE REVIEWS PREMIUM
+====================================*/
+
+.avaliacoes{
+    background:#0f0f0f;
+    padding:100px 8%;
+    overflow:hidden;
+}
+
+.avaliacoes h2{
+    text-align:center;
+    color:#fff;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.google-topo{
+    text-align:center;
+    margin-bottom:60px;
+}
+
+.nota-google{
+    font-size:28px;
+    color:#FFD54F;
+    font-weight:bold;
+}
+
+.nota-google span{
+    color:#fff;
+    font-size:46px;
+    margin-left:12px;
+}
+
+.google-topo p{
+    color:#bbb;
+    margin:18px 0 30px;
+    font-size:18px;
+}
+
+.btn-google{
+    display:inline-block;
+    padding:15px 35px;
+    background:#d4af37;
+    color:#111;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.35s;
+}
+
+.btn-google:hover{
+    background:#fff;
+    transform:translateY(-4px);
+    box-shadow:0 12px 30px rgba(212,175,55,.35);
+}
+
+.slider{
+    display:flex;
+    gap:30px;
+    animation:carrossel 24s linear infinite;
+    width:max-content;
+}
+
+.slider:hover{
+    animation-play-state:paused;
+}
+
+.slide{
+    width:360px;
+    min-height:
