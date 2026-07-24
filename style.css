@@ -65,7 +65,35 @@ section{padding:80px 0}
 .numero h2{color:var(--gold);font-size:48px}
 .footer{background:#111;color:#fff;padding:50px 0;text-align:center}
 .footer img{height:90px;margin:0 auto 20px}
-.redes a{color:var(--gold);margin:0 10px;text-decoration:none}
+.redes{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:15px;
+    margin:25px 0;
+}
+
+.redes a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    color:#d4af37;
+    text-decoration:none;
+    font-size:22px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.redes a:hover{
+    color:#fff;
+}
+
+.redes i{
+    width:30px;
+    text-align:center;
+    font-size:26px;
+}
 .whatsapp-float{position:fixed;right:20px;bottom:20px;width:65px;height:65px;border-radius:50%;background:#25D366;color:#fff;display:flex;align-items:center;justify-content:center;font-size:34px;text-decoration:none;z-index:9999}
 @media(max-width:768px){
 .navbar{flex-direction:column;gap:15px}
