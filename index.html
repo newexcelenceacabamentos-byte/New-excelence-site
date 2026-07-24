@@ -1,112 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>New Excelence | Textura Projetada e Acabamentos</title>
+<title>New Excelence Acabamentos | Textura Projetada em Curitiba e Região</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial,Helvetica,sans-serif;
-}
+<meta name="description" content="Especialistas em Textura Projetada, Pintura Residencial, Comercial, Fachadas e Acabamentos Premium em Curitiba e Região Metropolitana.">
 
-body{
-    background:#111;
-    color:#fff;
-}
+<meta name="keywords" content="textura projetada, pintura residencial, pintura comercial, textura Curitiba, pintura Piraquara, acabamento premium">
 
-header{
-    background:#000;
-    text-align:center;
-    padding:40px 20px;
-}
+<meta name="author" content="New Excelence Acabamentos">
 
-header img{
-    width:170px;
-    margin-bottom:20px;
-}
+<link rel="stylesheet" href="style.css">
 
-h1{
-    font-size:34px;
-}
+<link rel="preconnect" href="https://fonts.googleapis.com">
 
-header p{
-    color:#d4af37;
-    margin-top:10px;
-    font-size:18px;
-    line-height:1.6;
-}
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-.botao{
-    display:inline-block;
-    margin-top:25px;
-    background:#d4af37;
-    color:#000;
-    padding:15px 35px;
-    text-decoration:none;
-    font-weight:bold;
-    border-radius:8px;
-    transition:.3s;
-}
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 
-.botao:hover{
-    background:#f0c94c;
-}
-
-.hero img{
-    width:100%;
-    display:block;
-}
-
-section{
-    padding:50px 20px;
-}
-
-h2{
-    text-align:center;
-    color:#d4af37;
-    margin-bottom:30px;
-    font-size:30px;
-}
-
-.galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:20px;
-}
-
-.galeria img{
-    width:100%;
-    border-radius:12px;
-    transition:.3s;
-    box-shadow:0 0 15px rgba(0,0,0,.5);
-}
-
-.galeria img:hover{
-    transform:scale(1.03);
-}
-
-footer{
-    background:#000;
-    padding:40px 20px;
-    text-align:center;
-}
-
-footer a{
-    display:block;
-    color:#d4af37;
-    text-decoration:none;
-    margin:10px 0;
-}
-
-footer p{
-    margin-top:20px;
-}
-</style>
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
 
@@ -114,98 +30,239 @@ footer p{
 
 <header>
 
+<nav class="navbar">
+
+<div class="logo">
+
 <img src="Logo1.png" alt="New Excelence">
 
-<h1>NEW EXCELENCE ACABAMENTOS</h1>
+</div>
+
+<ul>
+
+<li><a href="#inicio">Início</a></li>
+
+<li><a href="#sobre">Sobre</a></li>
+
+<li><a href="#servicos">Serviços</a></li>
+
+<li><a href="#galeria">Galeria</a></li>
+
+<li><a href="#contato">Contato</a></li>
+
+</ul>
+
+<a class="btn-orcamento"
+href="https://wa.me/5541999544479"
+target="_blank">
+
+Solicitar Orçamento
+
+</a>
+
+</nav>
+
+<section id="inicio" class="hero">
+
+<div class="overlay"></div>
+
+<img src="FACHADA1.jpg" class="hero-img">
+
+<div class="hero-text">
+
+<img src="Logo1.png" class="hero-logo">
+
+<h1>
+
+TEXTURA PROJETADA<br>
+
+E ACABAMENTOS PREMIUM
+
+</h1>
 
 <p>
-Especialistas em Textura Projetada, Pintura Residencial,
-Comercial e Acabamentos de Alto Padrão.
+
+Transformamos fachadas e ambientes com acabamento impecável, materiais de alta qualidade e mão de obra especializada.
+
 </p>
 
-<a class="botao" href="https://wa.me/5541999544479">
-SOLICITAR ORÇAMENTO
+<div class="hero-buttons">
+
+<a href="https://wa.me/5541999544479" target="_blank">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+Solicitar Orçamento
+
 </a>
+
+<a href="#galeria">
+
+Ver Trabalhos
+
+</a>
+
+</div>
+
+</div>
+
+</section>
 
 </header>
+<!-- SOBRE -->
 
-<div class="hero">
-<img src="FACHADA1.jpg" alt="">
-</div>
+<section id="sobre" class="sobre">
 
-<section>
+<div class="container">
 
-<h2>Nossos Trabalhos</h2>
+<h2>Quem Somos</h2>
 
-<div class="galeria">
+<p class="texto">
 
-    <figure>
-        <img src="FACHADA1.jpg" alt="Fachada com textura projetada">
-        <figcaption>Textura Projetada em Fachada</figcaption>
-    </figure>
+A <strong>New Excelence Acabamentos</strong> é especializada em
+<strong>textura projetada, pintura residencial, pintura comercial,
+reformas de portões e estruturas metálicas.</strong>
 
-    <figure>
-        <img src="Fachada2.png" alt="Pintura residencial">
-        <figcaption>Pintura Residencial</figcaption>
-    </figure>
+Nosso compromisso é entregar acabamento impecável,
+pontualidade e materiais de alta qualidade para valorizar seu imóvel.
 
-    <figure>
-        <img src="Fachada3.jpg" alt="Acabamento premium">
-        <figcaption>Acabamento Premium</figcaption>
-    </figure>
-
-    <figure>
-        <img src="Antes-depois.jpg" alt="Antes e depois">
-        <figcaption>Antes e Depois</figcaption>
-    </figure>
-
-    <figure>
-        <img src="Antes-depois2.png" alt="Resultado final">
-        <figcaption>Resultado Final</figcaption>
-    </figure>
-
-</div>
-
-</div>
-
-</section>
-
-<section style="text-align:center;">
-
-<h2>Solicite seu orçamento</h2>
-
-<p style="margin-bottom:25px;">
-Atendimento rápido pelo WhatsApp.
 </p>
 
-<a class="botao" href="https://wa.me/5541999544479">
-CHAMAR NO WHATSAPP
-</a>
+<div class="cards">
 
-</section>
+<div class="card">
 
-<footer>
+<i class="fa-solid fa-medal"></i>
 
-<h2>Contato</h2>
-
-<a href="https://instagram.com/newexcelenceacabamentos">
-Instagram @newexcelenceacabamentos
-</a>
-
-<a href="https://www.tiktok.com/@newexcelenceacabamentos">
-TikTok @newexcelenceacabamentos
-</a>
+<h3>Acabamento Premium</h3>
 
 <p>
-WhatsApp: (41) 99954-4479
+Cada detalhe recebe atenção para entregar um resultado sofisticado e durável.
 </p>
 
-</footer>
-<a href="https://wa.me/5541999544479"
-   class="whatsapp-fixo"
-   target="_blank"
-   aria-label="WhatsApp">
-    💬
-</a>
-</body>
-</html>
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-house"></i>
+
+<h3>Fachadas Modernas</h3>
+
+<p>
+Transformamos fachadas utilizando textura projetada de alta resistência.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-paint-roller"></i>
+
+<h3>Pintura Profissional</h3>
+
+<p>
+Pintura residencial e comercial com excelente acabamento.
+</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Garantia de Qualidade</h3>
+
+<p>
+Utilizamos materiais de primeira linha e seguimos padrões profissionais.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SERVIÇOS -->
+
+<section id="servicos" class="servicos">
+
+<div class="container">
+
+<h2>Nossos Serviços</h2>
+
+<div class="servicos-grid">
+
+<div class="servico">
+
+<i class="fa-solid fa-brush"></i>
+
+<h3>Textura Projetada</h3>
+
+<p>
+Acabamento moderno, resistente às intempéries e com excelente durabilidade.
+</p>
+
+</div>
+
+<div class="servico">
+
+<i class="fa-solid fa-house-chimney"></i>
+
+<h3>Pintura Residencial</h3>
+
+<p>
+Ambientes internos e externos com acabamento fino e materiais de qualidade.
+</p>
+
+</div>
+
+<div class="servico">
+
+<i class="fa-solid fa-building"></i>
+
+<h3>Pintura Comercial</h3>
+
+<p>
+Renovação de empresas, comércios e condomínios.
+</p>
+
+</div>
+
+<div class="servico">
+
+<i class="fa-solid fa-screwdriver-wrench"></i>
+
+<h3>Portões e Estruturas Metálicas</h3>
+
+<p>
+Pintura, recuperação e revitalização de estruturas metálicas.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- NÚMEROS -->
+<section class="numeros">
+
+    <div class="numero">
+        <h2>100%</h2>
+        <p>Compromisso com a Qualidade</p>
+    </div>
+
+    <div class="numero">
+        <h2>⭐</h2>
+        <p>Atendimento Personalizado</p>
+    </div>
+
+    <div class="numero">
+        <h2>🏆</h2>
+        <p>Acabamento Profissional</p>
+    </div>
+
+</section>
