@@ -397,5 +397,19 @@ Pintura, recuperação e revitalização de estruturas metálicas.
     <i class="fa-brands fa-whatsapp"></i>
 
 </a>
+<script>
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("mostrar");
+        }
+    });
+});
+
+document.querySelectorAll("section").forEach(sec=>{
+    sec.classList.add("esconder");
+    observer.observe(sec);
+});
+</script>
 </body>
 </html>
