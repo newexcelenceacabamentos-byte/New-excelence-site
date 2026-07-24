@@ -397,6 +397,71 @@ document.querySelectorAll("section").forEach(sec=>{
     sec.classList.add("esconder");
     observer.observe(sec);
 });
-</script>
+    // ===== LIGHTBOX PREMIUM =====
+
+const imagens = document.querySelectorAll(".foto img");
+const lightbox = document.getElementById("lightbox");
+const imgExpandida = document.getElementById("imgExpandida");
+const fechar = document.querySelector(".fechar");
+const anterior = document.querySelector(".anterior");
+const proximo = document.querySelector(".proximo");
+
+let indiceAtual = 0;
+
+function abrirImagem(indice){
+    indiceAtual = indice;
+    imgExpandida.src = imagens[indice].src;
+    lightbox.classList.add("ativo");
+}
+
+imagens.forEach((img, indice)=>{
+    img.addEventListener("click", ()=>{
+        abrirImagem(indice);
+    });
+});
+
+fechar.onclick = ()=>{
+    lightbox.classList.remove("ativo");
+};
+
+lightbox.onclick = (e)=>{
+    if(e.target===lightbox){
+        lightbox.classList.remove("ativo");
+    }
+};
+
+proximo.onclick = ()=>{
+    indiceAtual++;
+    if(indiceAtual>=imagens.length){
+        indiceAtual=0;
+    }
+    abrirImagem(indiceAtual);
+};
+
+anterior.onclick = ()=>{
+    indiceAtual--;
+    if(indiceAtual<0){
+        indiceAtual=imagens.length-1;
+    }
+    abrirImagem(indiceAtual);
+};
+
+document.addEventListener("keydown",(e)=>{
+    if(!lightbox.classList.contains("ativo")) return;
+
+    if(e.key==="Escape"){
+        lightbox.classList.remove("ativo");
+    }
+
+    if(e.key==="ArrowRight"){
+        proximo.click();
+    }
+
+    if(e.key==="ArrowLeft"){
+        anterior.click();
+    }
+});
+    </script>
+
 </body>
 </html>
