@@ -8,88 +8,103 @@
 
 <style>
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,Helvetica,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#111;
-color:#fff;
+    background:#111;
+    color:#fff;
 }
 
 header{
-background:#000;
-padding:40px 20px;
-text-align:center;
+    background:#000;
+    text-align:center;
+    padding:40px 20px;
 }
 
 header img{
-width:180px;
-margin-bottom:20px;
+    width:170px;
+    margin-bottom:20px;
 }
 
-header h1{
-font-size:34px;
+h1{
+    font-size:34px;
 }
 
 header p{
-color:#d4af37;
-margin-top:10px;
-}
-
-.hero img{
-width:100%;
-display:block;
-}
-
-section{
-padding:50px 20px;
-}
-
-h2{
-text-align:center;
-margin-bottom:30px;
-color:#d4af37;
-font-size:30px;
-}
-
-.galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-gap:20px;
-}
-
-.galeria img{
-width:100%;
-border-radius:12px;
-box-shadow:0 0 15px rgba(0,0,0,.5);
+    color:#d4af37;
+    margin-top:10px;
+    font-size:18px;
+    line-height:1.6;
 }
 
 .botao{
-display:inline-block;
-margin:15px;
-padding:15px 30px;
-background:#d4af37;
-color:#000;
-text-decoration:none;
-font-weight:bold;
-border-radius:8px;
+    display:inline-block;
+    margin-top:25px;
+    background:#d4af37;
+    color:#000;
+    padding:15px 35px;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.botao:hover{
+    background:#f0c94c;
+}
+
+.hero img{
+    width:100%;
+    display:block;
+}
+
+section{
+    padding:50px 20px;
+}
+
+h2{
+    text-align:center;
+    color:#d4af37;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.galeria img{
+    width:100%;
+    border-radius:12px;
+    transition:.3s;
+    box-shadow:0 0 15px rgba(0,0,0,.5);
+}
+
+.galeria img:hover{
+    transform:scale(1.03);
 }
 
 footer{
-background:#000;
-padding:30px;
-text-align:center;
-margin-top:40px;
+    background:#000;
+    padding:40px 20px;
+    text-align:center;
 }
 
 footer a{
-color:#d4af37;
-text-decoration:none;
-display:block;
-margin:8px 0;
+    display:block;
+    color:#d4af37;
+    text-decoration:none;
+    margin:10px 0;
+}
+
+footer p{
+    margin-top:20px;
 }
 </style>
 
@@ -99,16 +114,23 @@ margin:8px 0;
 
 <header>
 
-<img src="Logo1.png">
+<img src="Logo1.png" alt="New Excelence">
 
-<h1>NEW EXCELENCE</h1>
+<h1>NEW EXCELENCE ACABAMENTOS</h1>
 
-<p>Textura Projetada • Pintura • Acabamentos Premium</p>
+<p>
+Especialistas em Textura Projetada, Pintura Residencial,
+Comercial e Acabamentos de Alto Padrão.
+</p>
+
+<a class="botao" href="https://wa.me/5541999544479">
+SOLICITAR ORÇAMENTO
+</a>
 
 </header>
 
 <div class="hero">
-<img src="FACHADA1.jpg">
+<img src="FACHADA1.jpg" alt="">
 </div>
 
 <section>
@@ -135,8 +157,12 @@ margin:8px 0;
 
 <h2>Solicite seu orçamento</h2>
 
+<p style="margin-bottom:25px;">
+Atendimento rápido pelo WhatsApp.
+</p>
+
 <a class="botao" href="https://wa.me/5541999544479">
-WhatsApp
+CHAMAR NO WHATSAPP
 </a>
 
 </section>
@@ -149,11 +175,11 @@ WhatsApp
 Instagram @newexcelenceacabamentos
 </a>
 
-<a href="https://tiktok.com/@newexcelenceacabamentos">
+<a href="https://www.tiktok.com/@newexcelenceacabamentos">
 TikTok @newexcelenceacabamentos
 </a>
 
-<p style="margin-top:20px;">
+<p>
 WhatsApp: (41) 99954-4479
 </p>
 
