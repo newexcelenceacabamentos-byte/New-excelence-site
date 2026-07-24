@@ -175,3 +175,6 @@ gap:20px;
     transform: scale(1.1);
     background: #1ebe5d;
 }
+body{
+    border:8px solid red;
+}
