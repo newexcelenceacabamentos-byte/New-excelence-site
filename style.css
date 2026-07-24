@@ -94,3 +94,61 @@ gap:20px;
 }
 
 .card{
+/* ===== SEÇÃO NÚMEROS ===== */
+
+.numeros{
+    background:#111;
+    color:#fff;
+    padding:70px 20px;
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    flex-wrap:wrap;
+    text-align:center;
+}
+
+.numero h2{
+    color:#f4b400;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.numero p{
+    font-size:18px;
+}
+
+/* ===== AVALIAÇÕES ===== */
+
+.avaliacoes{
+    padding:80px 20px;
+    background:#f8f8f8;
+}
+
+.avaliacoes h2{
+    text-align:center;
+    margin-bottom:40px;
+}
+
+.cards-avaliacoes{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.avaliacao{
+    background:#fff;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+    transition:.3s;
+}
+
+.avaliacao:hover{
+    transform:translateY(-8px);
+}
+
+.avaliacao strong{
+    display:block;
+    margin-top:15px;
+    color:#f4b400;
+}
