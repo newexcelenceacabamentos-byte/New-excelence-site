@@ -154,3 +154,94 @@ height:260px;
     opacity:1;
     transform:translateY(0);
 }
+/*==========================
+GALERIA PREMIUM
+==========================*/
+
+.galeria{
+padding:90px 8%;
+background:#111;
+}
+
+.galeria h2{
+text-align:center;
+font-size:42px;
+color:#fff;
+margin-bottom:15px;
+}
+
+.galeria-subtitulo{
+text-align:center;
+color:#ccc;
+margin-bottom:45px;
+}
+
+.galeria-premium{
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+grid-auto-rows:260px;
+
+gap:18px;
+
+}
+
+.item{
+
+overflow:hidden;
+
+border-radius:18px;
+
+cursor:pointer;
+
+box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+}
+
+.item.grande{
+
+grid-column:span 2;
+
+grid-row:span 2;
+
+}
+
+.item img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:.6s;
+
+display:block;
+
+}
+
+.item:hover img{
+
+transform:scale(1.08);
+
+}
+
+@media(max-width:900px){
+
+.galeria-premium{
+
+grid-template-columns:1fr;
+
+}
+
+.item.grande{
+
+grid-column:auto;
+
+grid-row:auto;
+
+}
+
+}
